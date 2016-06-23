@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/soper.iml" filepath="$PROJECT_DIR$/soper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soper-core/soper-core.iml" filepath="$PROJECT_DIR$/soper-core/soper-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soper-demo/soper-demo.iml" filepath="$PROJECT_DIR$/soper-demo/soper-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soper-registry/soper-registry.iml" filepath="$PROJECT_DIR$/soper-registry/soper-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soper-rpc/soper-rpc.iml" filepath="$PROJECT_DIR$/soper-rpc/soper-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soper-webDemo/soper-webDemo.iml" filepath="$PROJECT_DIR$/soper-webDemo/soper-webDemo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jdbi:jdbi:2.55">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jdbi/jdbi/2.55/jdbi-2.55.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jdbi/jdbi/2.55/jdbi-2.55-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jdbi/jdbi/2.55/jdbi-2.55-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

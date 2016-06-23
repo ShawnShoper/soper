@@ -1,0 +1,5 @@
+org/shoper/soper/rpc/thrift/server/ThriftServer.class
+org/shoper/soper/rpc/thrift/conf/ProtocolFactory.class
+org/shoper/soper/rpc/thrift/server/ThriftServerBuilder.class
+org/shoper/soper/rpc/thrift/conf/ThriftServerConfig.class
+org/shoper/soper/rpc/thrift/server/TProcessorX.class
