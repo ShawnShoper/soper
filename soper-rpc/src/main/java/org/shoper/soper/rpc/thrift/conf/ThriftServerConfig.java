@@ -1,12 +1,14 @@
 package org.shoper.soper.rpc.thrift.conf;
 
+import org.apache.zookeeper.server.ServerConfig;
+
 import java.util.concurrent.TimeUnit;
 
 /**
  * Thrift server config
  * Created by ShawnShoper on 16/6/19.
  */
-public class ThriftServerConfig {
+public class ThriftServerConfig extends ServerConfig {
     private String host;
     private int port;
     private int minThreads;

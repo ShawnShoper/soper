@@ -13,6 +13,7 @@ import org.shoper.soper.exception.ProcessorException;
 import org.shoper.soper.exception.RPCDeployTimeoutExcepion;
 import org.shoper.soper.exception.RPCException;
 import org.shoper.soper.register.conf.RegistryConfig;
+import org.shoper.soper.rpc.conf.RPCServer;
 import org.shoper.soper.rpc.thrift.conf.ProtocolFactory;
 import org.shoper.soper.rpc.thrift.conf.ThriftServerConfig;
 
@@ -28,7 +29,7 @@ import static java.util.Objects.isNull;
 /**
  * Created by ShawnShoper on 16/5/5.
  */
-public class ThriftServer {
+public class ThriftServer implements RPCServer{
     private TServer server;
     private ThriftServerConfig tsc;
     private RegistryConfig registryConfig;
@@ -78,7 +79,7 @@ public class ThriftServer {
                 b = future.get(tsc.getDeployTimeout(), tsc.getTimeUnit());
             else
                 b = future.get();
-            if (Objects.isNull(b) || b == false)
+            if (Objects.isNull(b) || !b)
                 if (isServer()) return true;
                 else
                     return false;

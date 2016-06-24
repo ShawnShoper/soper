@@ -3,10 +3,10 @@ package org.shoper.soper.rpc;
 import org.shoper.soper.config.InterfaceConfig;
 import org.shoper.soper.exception.RPCException;
 import org.shoper.soper.register.conf.RegistryConfig;
+import org.shoper.soper.rpc.conf.ThriftServerBuilder;
 import org.shoper.soper.rpc.thrift.conf.ProtocolFactory;
 import org.shoper.soper.rpc.thrift.conf.ThriftServerConfig;
 import org.shoper.soper.rpc.thrift.server.ThriftServer;
-import org.shoper.soper.rpc.thrift.server.ThriftServerBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,7 +33,7 @@ public class RPC {
         tsc.setProtocol(ProtocolFactory.COMPACT);
         tsc.setMaxThreads(100);
 
-        ThriftServer thriftServer = ThriftServerBuilder.newInstance(tsc).build();
+        ThriftServer thriftServer = ThriftServerBuilder.newInstance(tsc).build("thrift");
         InterfaceConfig interfaceConfig = new InterfaceConfig();
         interfaceConfig.setStub(ReportServer.class);
         interfaceConfig.setProcessor(reportServer);

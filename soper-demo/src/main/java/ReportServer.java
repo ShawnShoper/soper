@@ -217,7 +217,9 @@ public class ReportServer {
 
         public String report; // required
 
-        /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+        /**
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+         */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             REPORT((short) 1, "report");
 
@@ -326,7 +328,9 @@ public class ReportServer {
             this.report = null;
         }
 
-        /** Returns true if field report is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field report is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetReport() {
             return this.report != null;
         }
@@ -359,7 +363,9 @@ public class ReportServer {
             throw new IllegalStateException();
         }
 
-        /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+         */
         public boolean isSet(_Fields field) {
             if (field == null) {
                 throw new IllegalArgumentException();
@@ -409,7 +415,6 @@ public class ReportServer {
             return list.hashCode();
         }
 
-        @Override
         public int compareTo(reportJobDone_args other) {
             if (!getClass().equals(other.getClass())) {
                 return getClass().getName().compareTo(other.getClass().getName());
@@ -538,7 +543,6 @@ public class ReportServer {
 
         private static class reportJobDone_argsTupleScheme extends TupleScheme<reportJobDone_args> {
 
-            @Override
             public void write(org.apache.thrift.protocol.TProtocol prot, reportJobDone_args struct) throws TException {
                 TTupleProtocol oprot = (TTupleProtocol) prot;
                 BitSet optionals = new BitSet();
@@ -551,7 +555,6 @@ public class ReportServer {
                 }
             }
 
-            @Override
             public void read(org.apache.thrift.protocol.TProtocol prot, reportJobDone_args struct) throws TException {
                 TTupleProtocol iprot = (TTupleProtocol) prot;
                 BitSet incoming = iprot.readBitSet(1);

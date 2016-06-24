@@ -26,4 +26,12 @@
   <component name="SvnBranchConfigurationManager">
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
+  <component name="ZooKeeperConfig">
+    <option name="host" value="192.168.100.179" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="/" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
+  </component>
 </project>
